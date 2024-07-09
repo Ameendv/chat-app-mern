@@ -40,7 +40,7 @@ export const signup = async (req, res) => {
       generateTokenAndSetCookie(newUser._id, res);
       await newUser.save();
 
-      res.status(201).json({ result: newUser });
+      res.status(201).json(newUser);
     } else {
       res.status(400).json({ error: "Invalid User details" });
     }
