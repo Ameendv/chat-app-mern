@@ -33,12 +33,12 @@ const SignUp = () => {
         <form onSubmit={handleSubmit}>
           <div>
             <label className="lable p-2">
-              <span className="text-base label-text">Full Name</span>
+              <span className="text-base label-text text-gray-300">Full Name</span>
             </label>
             <input
               type="text"
               placeholder="John Doe"
-              className="w-full input input-bordered h-10"
+              className="w-full input input-bordered h-10 text-gray-300"
               value={inputs.fullName}
               onChange={(e) =>
                 setInputs({ ...inputs, fullName: e.target.value })
@@ -47,11 +47,11 @@ const SignUp = () => {
           </div>
           <div>
             <label className="label p-2">
-              <span className="text-base label-text">Username</span>
+              <span className="text-base label-text text-gray-300">Username</span>
             </label>
             <input
               type="text"
-              className="w-full input input-bordered h-10"
+              className="w-full input input-bordered h-10 text-gray-300"
               placeholder="johndoe"
               value={inputs.userName}
               onChange={(e) =>
@@ -61,7 +61,7 @@ const SignUp = () => {
           </div>
           <div>
             <label className="label p-2">
-              <span className="text-base label-text">Password</span>
+              <span className="text-base label-text text-gray-300">Password</span>
             </label>
             <input
               type="password"
@@ -75,7 +75,7 @@ const SignUp = () => {
           </div>
           <div>
             <label className="label p-2">
-              <span className="text-base label-text">Confirm Password</span>
+              <span className="text-base label-text text-gray-300">Confirm Password</span>
             </label>
             <input
               type="password"
